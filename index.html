@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&family=Chakra+Petch:ital,wght@1,700&family=Lato:ital,wght@1,700&family=Roboto+Slab:wght@200;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="expensetrack.css">
+    <title>Expense Tracker</title>
+    <link rel="icon" type="png" href=".\logo.png"/>
+    <body>
+    <img src=".\logo.png">
+    <div class="input-sec">
+        <label for="input-type" placeholder="Select">Expense Type : </label>
+        <select id ="input-type">
+            <option class ="Diet">Diet</option>
+            <option class ="Rent">Rent</option>
+            <option class ="Transport">Transport</option>
+            <option class ="Medical">Medical</option>
+            <option class ="Bills">Bills</option>
+            <option class ="Stationery">Stationary</option>
+            <option class ="Movies">Movies</option>
+            <option class ="Games">Games</option>
+            <option class ="Clothing">Clothing</option>
+            <option class ="Subscriptions">Subscriptions</option>
+            <option class ="Laundry">Laundry</option>
+            <option class ="Fuel">Fuel</option>
+            <option class ="Gym">Gym</option>
+            <option class ="Others">Other</option>
+        </select>
+        <label for="amt-input">Amount : </label>
+        <input type="number" id="amt-input" placeholder="0.00"  max="8">
+        <label for="date-input">Date : </label>
+        <input type="date" id="date-input">
+        <label for="description">Description : </label>
+        <input type="text" id="description" maxlength="20" placeholder="Write Description"> 
+        <button id="add-button">Add to List</button>
+    </div>
+    <div class="expense-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Type</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expense-body">
+
+            </tbody>
+            <tfoot>
+                <td>Total : </td>
+                <td id="total-amt"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+</head>
+   <script src="expensetrack.js"></script> 
+</body>
+</html>

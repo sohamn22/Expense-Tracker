@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #393E46;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+    color: #787A91;
+    padding: 20px;
+    font-size: 100px;
+    font-family:'Chakra Petch', sans-serif;
+}
+img{
+    margin-left: 33%;
+    height: 300px;
+    width: 500px;
+    padding: 5px;
+}
+.input-sec{
+    padding: 50px;
+    margin: 40px;
+    border-radius: 20px;
+    background-color: #787A91;
+    height: 80px;
+}
+.input-sec label{
+    padding: 30px;
+    text-align: left;
+    display: inline-flex;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    margin-left: 60px;
+}
+.input-sec input[type="number"], .input-sec[type="date"]{
+    padding: 10px;
+
+}
+.input-sec button{
+    border-radius: 10px;
+    background-color: #0079FF;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin-left: 625px;
+}
+.input-sec button:hover{
+    background-color: black;
+}
+#input-type{
+    border-radius: 10px;
+    height: 30px;
+    width: 90px;
+}
+#amt-input{
+    border-radius: 10px;
+    height: 15px;
+    width: 70px;
+}
+#date-input{
+    border-radius: 10px;
+    height: 30px;
+}
+#description{
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+}
+.expense-list{
+    margin: 50px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 3px solid#787A91;
+    padding: 5px;
+    text-align: center;
+    color:aliceblue;
+    
+}
+th{
+    background-color:black;
+    color: white;
+
+}
+.delete-btn{
+    border-radius: 10px;
+    background-color: #0079FF;
+    color: white;
+}
+.delete-btn:hover{
+    background-color:#1AACAC;
+    color: white;
+}
